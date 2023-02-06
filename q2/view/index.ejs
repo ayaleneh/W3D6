@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Question 2</title>
+  </head>
+  <body>
+  <form action="/response" method="post">
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name"/>
+   <label for="age">Age:</label>
+   <input type="number" id="age" name="age">
+   <button  type="submit">Submit Query</button>
+  </form>
+  
+  <p>Hello, <%= (typeof name != "undefined" ? name : "") %> You are <%= (typeof age != "undefined" ? age : "") %> years old.</p>
+  </body>
+</html>
